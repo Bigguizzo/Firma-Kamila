@@ -2,15 +2,15 @@
 Projekt szkolny dotyczacy aplikacji dla firmy Kamila :D
 
 
-Specyfikacja Algorytmu
+# Specyfikacja Algorytmu
 
-Dane wejsciowe:
+### Dane wejsciowe:
 
 	monthly_sales_value_seller, value_payment, percentage_of_bonus - pobrane liczby całkowite od użytkownika
-Wyniki: 
+### Wyniki: 
 
-	seller_remuneration - liczba całkowita, reprezentująca wynagrodzenie sprzedawcy, po odliczeniu wszystkich 				rzeczy.
-Zmienne pomocnicze:
+	seller_remuneration - liczba całkowita, reprezentująca wynagrodzenie sprzedawcy, po odliczeniu wszystkich rzeczy.
+### Zmienne pomocnicze:
 
 	bonus_value - zmienna wysokosci premi zależna od wartości sprzedazy w biezacym miesiacu
 			10% dla bonus_value < 10000
@@ -22,18 +22,19 @@ Zmienne pomocnicze:
 
 
 
-Pseudokod
-// getMonthly_sales_value_seller()
+
+## Pseudokod
+### // getMonthly_sales_value_seller()
 
 	pobieranie monthly_sales_value_seller;
 	zwracanie monthly_sales_value_seller;
 	
-// getValue_payment()
+### // getValue_payment()
 
 	pobieranie value_payment;
 	zwracanie value_payment;
 
-// getValue_percentage()
+### // getValue_percentage()
 
 	percentage_of_bonus = 0;
 	pobieranie monthly_sales_value_seller  = getMonthly_sales_value_seller();
@@ -55,19 +56,19 @@ Pseudokod
 	}
 	zwracanie percentage_of_bonus;
  
-// Pobierz miesięczną wartość sprzedaży dla danego sprzedawcy: 
+	Pobierz miesięczną wartość sprzedaży dla danego sprzedawcy: 
 
-	 Ustawianie monthly_sales_value_seller = getMonthly_sales_value_seller(); 
+	Ustawianie monthly_sales_value_seller = getMonthly_sales_value_seller(); 
   
-//  Pobierz wartość pobranej zaliczki. 
+### //  Pobierz wartość pobranej zaliczki. 
 
 	Ustawianie value_payment = getValue_payment();
  
-// Na podstawie wartości sprzedaży pobierz procentową wysokość premii. 
+### // Na podstawie wartości sprzedaży pobierz procentową wysokość premii. 
 
 	Ustawianie  percentage_of_bonus = getValue_percentage();
  
-// Za pomocą przedstawionego wzoru oblicz wynagrodzenie sprzedawcy.
+### // Za pomocą przedstawionego wzoru oblicz wynagrodzenie sprzedawcy.
 
 	Ustawianie seller_remuneration = 0;
 	seller_remuneration = monthly_sales_value_seller * bonus_value - value_payment;
@@ -75,29 +76,29 @@ Pseudokod
 
 
  
-Pseudokod wszystkich funkcji przedstaw w postaci schematu blokowego
+## Pseudokod wszystkich funkcji przedstaw w postaci schematu blokowego
 
-1.	getMonthly_sales_value_seller()
+### 1. getMonthly_sales_value_seller()
 
 
 
 ![image](https://github.com/Bigguizzo/Firma-Kamila/assets/87502153/4cb421e3-0efe-46cb-a347-fd1a3d1fd703)
 
-2.	getValue_payment()
+###  2.	getValue_payment()
 
 
 
 
  ![image](https://github.com/Bigguizzo/Firma-Kamila/assets/87502153/76ee61a4-a777-465c-a82a-e40c249c3344)
 
-3.	getValue_percentage()
+###  3.	getValue_percentage()
 
 
 
 
  ![image](https://github.com/Bigguizzo/Firma-Kamila/assets/87502153/5b93aa40-e692-4eb4-a7c7-d9b08937121b)
 
-4.	Main Program
+###  4.	Main Program
 
 
 
